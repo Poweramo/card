@@ -1,0 +1,77 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  background: black;
+  height: 700px;
+  width: 50%;
+  color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+}
+
+h1,
+p,
+button {
+  display: flex;
+}
+
+h1::selection,
+p::selection {
+  background: skyblue;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 50vw;
+}
+
+img {
+  margin: 5px;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+  background: rgb(103, 179, 209);
+  border: none;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+button:hover {
+  background: skyblue;
+}
+
+.btnClicked {
+  transform: scale(1.2);
+}
